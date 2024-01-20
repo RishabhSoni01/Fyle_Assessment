@@ -1,84 +1,11 @@
-/* body {
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  #search-form {
-    display: inline-block;
-    margin: 0 auto;
-  }
-  
-  #search-input {
-    width: 300px;
-    padding: 5px;
-    margin-right: 10px;
-  }
-  
-  #repos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  .repo {
-    width: 300px;
-    margin: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .repo h3 {
-    margin: 0 0 10px;
-  }
-  
-  .repo p {
-    margin: 0;
-  }
-  
-  #load-more {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #load-more:hover {
-    background-color: #0062cc;
-  }
-  
-  .loader {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #3498db;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    animation: spin 1s linear infinite;
-    margin: 0 auto;
-    display: none;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  } */
-
-  body {
+body {
     font-family: Arial, sans-serif;
     width: 52%;
     justify-content: center;
     align-items: center;
     margin-left: 25%;
+    border: 1px solid #000000;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -113,18 +40,18 @@ header {
   padding: 15px;
   text-align: left;
   border: 1px solid #000000;
-    justify-items:end;
+  justify-items:end;
 }
 
 .repo h3 {
     margin: 0 0 10px;
     font-size: 1.2em;
-    
+    color: #469ad6;
 }
 
 .repo p {
   margin: 10px 0;
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 
 .languages-buttons {
@@ -135,7 +62,9 @@ header {
   display: inline-block;
   margin: 5px;
   padding: 5px 10px;
-  background-color: #2a7ef3;
+  font-weight: bold;
+  color: #ddd;
+  background-color: #469ad6;
   border: 1px solid #000000;
   border-radius: 3px;
   cursor: pointer;
@@ -143,7 +72,7 @@ header {
 }
 
 .languages-btn:hover {
-  background-color: #1570e1;
+  background-color: #5fa1f2;
 }
 
 .repo a {
@@ -164,9 +93,10 @@ header {
 .languages-btn {
     display: inline-block;
     margin: 5px;
+    font-size: 10px;
     padding: 5px 10px;
-    background-color: #92adec;
-    border: 1px solid #ddd;
+    background-color: #638ef1;
+    border: 1px solid #2272b7;
     border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s ease;
