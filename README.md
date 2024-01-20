@@ -1,4 +1,4 @@
-# Fyle Assesment
+# Fyle Assessment
 
 This web application allows users to search for a GitHub username and view information about the user along with their repositories. Users can navigate through the list of repositories, load more repositories, and customize the number of repositories displayed per page.
 
@@ -42,4 +42,4 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/RishabhSoni01/Fyle_Assesment.git
