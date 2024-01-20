@@ -1,0 +1,79 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>GitHub Repositories</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+      <header>
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Enter a GitHub username">
+          <button type="submit">Search</button>
+        </form>
+      </header>
+      <main>
+        <section id="user-profile" style="display: none;">
+          
+          <div id="user-info">
+              <div class="left">
+                  <img id="profile-photo" src="" alt="Profile Photo">
+                  <div class="github-info">
+                      <a id="github-link" href="#" target="_blank">
+                          <img src="https://cdn.iconscout.com/icon/free/png-256/free-link-1439748-1214320.png" alt="GitHub Link">
+                      </a>
+                      <a id="github-link1" href="#" target="_blank">https://github.com/<span id="username-link"></span></a>
+                  </div>
+              </div>
+              <div class="profile-info">
+                <h2 id="username">GitHub Username</h2>
+                <p id="bio">GitHub Bio</p>
+                <p id="location">Location</p>
+                <a id="twitter-link" href="#" target="_blank">Twitter</span></a>
+            </div>
+            
+          
+          <!-- <div class="github-info">
+              
+              <a id="github-link1" href="#" target="_blank">https://github.com/<span id="username-link"></span></a>
+          </div> -->
+          </div>
+        </section>
+        <section id="repos" class="repos"></section>
+        <button id="load-more">Load More</button>
+      </main>
+      <footer>
+          <div class="container">
+            <div class="simple_text">
+              No of Repositories
+            </div>
+            <select id="per-page-select">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+              
+              <ul class="page-list" id="page-list">
+                <li class="page-item" id="page-links"><a href="#">1</a></li>
+                <li class="page-item" id="page-links"><a href="#">2</a></li>
+                <li class="page-item" id="page-links"><a href="#">3</a></li>
+                <li class="page-item" id="page-links"><a href="#">4</a></li>
+                <li class="page-item" id="page-links"><a href="#">5</a></li>
+                <li class="page-item" id="page-links"><a href="#">6</a></li>
+                <li class="page-item" id="page-links"><a href="#">7</a></li>
+                <li class="page-item" id="page-links"><a href="#">8</a></li>
+                <li class="page-item" id="page-links"><a href="#">9</a></li>
+              </ul>
+              <div class="button-container">
+                <button class="button older-button" id="older-button">Older</button>
+                <button class="button newer-button" id="newer-button">Newer</button>
+              </div>
+            </div>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>

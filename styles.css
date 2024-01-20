@@ -1,0 +1,422 @@
+/* body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #search-form {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  
+  #search-input {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  #repos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .repo {
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .repo h3 {
+    margin: 0 0 10px;
+  }
+  
+  .repo p {
+    margin: 0;
+  }
+  
+  #load-more {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #load-more:hover {
+    background-color: #0062cc;
+  }
+  
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+    display: none;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } */
+
+  body {
+    font-family: Arial, sans-serif;
+    width: 52%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+#search-form {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#search-input {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#repos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    border: #000000;
+}
+
+.repo {
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #000000;
+    justify-items:end;
+}
+
+.repo h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    
+}
+
+.repo p {
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.languages-buttons {
+  margin-top: 10px;
+}
+
+.languages-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #2a7ef3;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.languages-btn:hover {
+  background-color: #1570e1;
+}
+
+.repo a {
+    display: block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    color: #000000;
+    
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.repo a:hover {
+    background-color: #0062cc;
+}
+
+.languages-btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #92adec;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.languages-btn:hover {
+    background-color: #ddd;
+}
+  
+#load-more {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#load-more:hover {
+  background-color: #0062cc;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+  display: none;
+}
+
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add these styles at the end of your existing CSS */
+
+/* ... (your existing CSS) ... */
+
+#user-profile {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content:flex-start;
+  margin: 20px 0;
+}
+
+#profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-left: 60px;
+  border: #000;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+}
+
+.left{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+#user-info {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0px;
+  border-radius: 5px;
+  
+}
+
+.profile-info {
+  flex: 2.5;
+  margin: 0px 10px 20px 10px;
+}
+
+#username {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+#bio {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#location{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+#twitter-link {
+  font-size: 12px;
+  text-decoration: none;
+  color: #0084B4;
+}
+
+.github-info {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+.simple_text{
+  margin-left: 40%;
+}
+
+#github-link img {
+  font-size: 1px;
+ text-decoration: none;
+ color: #333;
+ 
+ margin-top: 5px;
+ height: 20px;
+ width: 20px;
+}
+
+#github-link{
+  margin-left: 10%;
+}
+
+#github-link1 {
+  margin-left: 5%;
+  text-size-adjust: 1px;
+  display: block;
+  background: none;
+  color: #000000;
+  font-size: small;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+#per-page-select {
+  margin-left: 46%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+
+.page-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-left: 22%;
+}
+
+/* a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+} */
+
+.page-item {
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 30px; /* Adjust the width as needed */
+  text-align: center;
+}
+
+.page-item a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.page-item:hover a {
+  background-color: #eee; /* Background color on hover */
+}
+
+.page-item.active a {
+  background-color: #b3d4fc; /* Background color for the active page */
+  color: #333;
+  border-radius: 2px;
+  border: 1px solid #000000;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-left: 20%;
+}
+
+.button {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.older-button {
+  border-radius: 3px;
+
+}
+
+.newer-button {
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: #eee;
+}
