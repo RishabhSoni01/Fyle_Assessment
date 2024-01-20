@@ -8,9 +8,7 @@ This web application allows users to search for a GitHub username and view infor
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Demo
 
@@ -21,7 +19,7 @@ This web application allows users to search for a GitHub username and view infor
 ## Features
 
 - **User Search**: Enter a GitHub username to search for the user's information.
-- **User Information**: Display user's profile photo, bio, location, GitHub link, and Twitter link (if available).
+- **User Information**: Display the user's profile photo, bio, location, GitHub link, and Twitter link (if available).
 - **Repository List**: Display a list of repositories for the searched user.
 - **Pagination**: Navigate through the list of repositories with page links.
 - **Load More**: Load additional repositories with a "Load More" button.
