@@ -13,6 +13,7 @@ This web application allows users to search for a GitHub username and view infor
 ## Demo
 
 ![fyle1](https://github.com/RishabhSoni01/Fyle_Assessment/assets/80063042/c54ea984-ef3a-41a0-8cb3-f7b3489ca014)
+![fyle3](https://github.com/RishabhSoni01/Fyle_Assessment/assets/80063042/fd08df31-3ae1-4f1e-90ed-a9d934a55819)
 ![fyle2](https://github.com/RishabhSoni01/Fyle_Assessment/assets/80063042/3d1298e5-93c7-4fc9-beae-d3aacc7ed66f)
 
 
